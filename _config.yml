@@ -1,18 +1,18 @@
 ### Site info:
-title: Freshman21
+title: fanei
 tagline: Another Jekyll theme, Freshman twenty-first
-author: Lijia YU
-email: yu@lijiayu.net
+author: fanei
+email: faneizn@gmail.com
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Jekyll, theme, Freshman21"
-baseurl: "/freshman21" # the subpath of your site, e.g. /blog/
-url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fanei.github.io/" # the base hostname & protocol for your site
 
 
 ### Personal info and site tools info:
-twitter_username: yulijia
-github_username:  yulijia
-disqus_shortname: freshman21
+twitter_username: fanei
+github_username:  fanei
+disqus_shortname: fanei
 favicon:     "/images/favicon.ico"
 aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
 aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg # your photo.
@@ -55,11 +55,11 @@ locales:
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-    - name: Freshman21
-      href: http://yulijia.net/freshman21
+    - name: fanei
+      href: http://fanei.github.io/
       title: Another Jekyll blog theme
     - name: author's website
-      href: http://yulijia.net/
+      href: http://fanei.github.io/
       title: Lijia Yu's website
 
 
