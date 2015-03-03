@@ -4,13 +4,13 @@
     <title>fanei's Tech Blog</title>
     <generator uri="https://github.com/jekyll/jekyll">Jekyll v2.4.0</generator>
 		<icon>/apple-touch-icon-precomposed.png</icon>
-    <subtitle>Collection of everythings I want to record down especially for tech</subtitle>
+    <subtitle></subtitle>
     <link href="/atom.xml" rel="self"/>
     <link href="/" rel="alternate" type="text/html"/>
-    <updated>2015-03-03T12:56:25+08:00</updated>
+    <updated>2015-03-03T13:53:49+08:00</updated>
     <id>/</id>
     <author>
-			<name>fanei</name>
+			<name>Fanei</name>
 			<uri>/</uri>
 			<email>fanei@gmail.com</email>
 		</author>
@@ -22,7 +22,7 @@
         <updated>2015-03-03T00:00:00+08:00</updated>
         <id>/archives/android.support.v7.widget.Toolbar错误</id>
         <author>
-					<name>fanei</name>
+					<name>Fanei</name>
 					<uri>/</uri>
 					<email>fanei@gmail.com</email>
 				</author>
@@ -49,7 +49,7 @@
         <updated>2015-03-03T00:00:00+08:00</updated>
         <id>/life/android.support.v7.widget.Toolbar错误</id>
         <author>
-					<name>fanei</name>
+					<name>Fanei</name>
 					<uri>/</uri>
 					<email>fanei@gmail.com</email>
 				</author>

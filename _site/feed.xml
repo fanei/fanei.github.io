@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fanei&#39;s Tech Blog</title>
-    <description>Collection of everythings I want to record down especially for tech</description>
+    <description></description>
     <link>http://cenalulu.github.io/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Mar 2015 12:56:25 +0800</pubDate>
-    <lastBuildDate>Tue, 03 Mar 2015 12:56:25 +0800</lastBuildDate>
+    <pubDate>Tue, 03 Mar 2015 13:53:49 +0800</pubDate>
+    <lastBuildDate>Tue, 03 Mar 2015 13:53:49 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
