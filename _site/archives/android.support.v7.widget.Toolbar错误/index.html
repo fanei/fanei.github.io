@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>support.v7.widget.Toolbar错误 • fanei's Tech Blog</title>
+    <meta name="description" content="This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+
+">
+    <meta name="keywords" content="">
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="support.v7.widget.Toolbar错误">
+	<meta name="twitter:description" content="This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+
+">
+	
+	
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/logo.png">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="support.v7.widget.Toolbar错误">
+	<meta property="og:description" content="This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+
+">
+	<meta property="og:url" content="/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/">
+	<meta property="og:site_name" content="fanei's Tech Blog">
+    
+
+    <link rel="canonical" href="/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/">
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="fanei's Tech Blog Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <style>
+    .sliding-menu-content {
+      top: 0;
+      right: 0;
+      text-align: center;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    </style>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">fanei's Tech Blog</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">fanei's Tech Blog</a></li>
+	
+    
+        
+    
+    <li><a href="/" >Home</a></li>
+  
+    
+        
+    
+    <li><a href="/life/" >Life</a></li>
+  
+    
+        
+    
+    <li><a href="/archives/" >Archives</a></li>
+  
+    
+        
+    
+    <li><a href="/guestbook/" >Guestbook</a></li>
+  
+    
+        
+    
+    <li><a href="/about/" >About</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" class="js-menu sliding-menu-content">
+	<ul class="menu-item">
+		<li>
+      
+        
+      
+			
+			<a href="/" class="title">Home</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/life/" class="title">Life</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/archives/" class="title">Archives</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/guestbook/" class="title">Guestbook</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/about/" class="title">About</a>
+			
+		</li>
+	</ul>
+</nav>
+<button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
+	<span class="menulines"></span>
+</button>
+
+<div class="js-menu-screen menu-screen"></div>
+
+    <div id="page-wrapper">
+      <!--[if lt IE 9]><div class="upgrade notice-danger"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+      <div id="main" role="main">			
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		
+		
+  <nav class="breadcrumbs">
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="" itemprop="url">
+        <span itemprop="title">Home</span>
+      </a> › 
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/archives/" itemprop="url">
+        <span itemprop="title">Archives</span>
+      </a>
+    </span>
+  </nav><!-- /.breadcrumbs -->
+
+		<div class="page-title">
+			<h1>support.v7.widget.Toolbar错误</h1>
+		</div>
+		<div class="inner-wrap">
+            
+			<div id="content" class="page-content" itemprop="articleBody">
+				<p>This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.</p>
+
+<p>在写一个小demo时遇到了这个错误，记下自己的解决方法 <br />
+在styles.xmls 里自定义style。代码如下</p>
+
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="p">&lt;</span>style name<span class="p">=</span><span class="s2">&quot;AppTheme.base&quot;</span> parent<span class="p">=</span><span class="s2">&quot;Theme.AppCompat&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span>item name<span class="p">=</span><span class="s2">&quot;windowActionBar&quot;</span><span class="p">&gt;</span>false<span class="p">&lt;</span>/item<span class="p">&gt;</span>
+    <span class="p">&lt;</span>item name<span class="p">=</span><span class="s2">&quot;android:windowNoTitle&quot;</span><span class="p">&gt;</span>true<span class="p">&lt;</span>/item<span class="p">&gt;</span>
+<span class="p">&lt;</span>/style<span class="p">&gt;</span></code></pre></div>
+
+<p>需要注意的地方时， name=”windowActionBar” ，还有一个属性是name=”android:windowActionBar” 这两个千万不要写错了。暂时没有找到这两个的区别，请知道的补充下。但是toolbar里使用后者的话，就会报错误。</p>
+
+				<hr />
+				<footer class="page-footer">
+					
+
+
+<div class="author-image">
+	<img src="/images/logo.jpg" alt="fanei">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name" >Written by <span itemprop="author">fanei</span></h3>
+	<p class="author-bio"></p>
+	<p class="author-email">fanei@gmail.com</p>
+</div><!-- ./author-content -->
+					<div class="inline-btn">
+    <a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=support.v7.widget.Toolbar错误&amp;url=/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/&amp;via=" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+    <a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+    <a class="btn-social google-plus"  href="https://plus.google.com/share?url=/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+
+					<div class="page-meta">
+	<p>Updated <time datetime="2015-03-03T00:00:00Z" itemprop="datePublished">March 03, 2015</time></p>
+</div><!-- /.page-meta -->
+				</footer><!-- /.footer -->
+				<aside>
+					<hr />
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'httpfaneigithubio';
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				</aside>
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+		
+	</article><!-- ./wrap -->
+</div><!-- /#main -->
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58172430-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?7899932bbca61f3d49db1d4bb958c831";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2015 <a href="">fanei's Tech Blog</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
+</footer>
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+    
+
+  </body>
+
+</html>

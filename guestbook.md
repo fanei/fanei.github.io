@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: about
 title: Guestbook
-comments: yes
+toc: true
 permalink: /guestbook/
 ---
 ## Hi, welcome to leave a message here.:)
 
-> To follow the path, look to the master, follow the master, walk with the master, see through the master, become the master.
+> 欢迎大家给我留言，交流各种问题.
 

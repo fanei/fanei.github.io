@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fanei&#39;s Tech Blog</title>
+    <description>Collection of everythings I want to record down especially for tech</description>
+    <link>http://cenalulu.github.io/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 03 Mar 2015 12:56:25 +0800</pubDate>
+    <lastBuildDate>Tue, 03 Mar 2015 12:56:25 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>support.v7.widget.Toolbar错误</title>
+        <description>&lt;p&gt;This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.&lt;/p&gt;
+
+&lt;p&gt;在写一个小demo时遇到了这个错误，记下自己的解决方法 &lt;br /&gt;
+在styles.xmls 里自定义style。代码如下&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;style name&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;AppTheme.base&amp;quot;&lt;/span&gt; parent&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Theme.AppCompat&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;item name&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;windowActionBar&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;false&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/item&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;item name&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;android:windowNoTitle&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/item&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/style&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;需要注意的地方时， name=”windowActionBar” ，还有一个属性是name=”android:windowActionBar” 这两个千万不要写错了。暂时没有找到这两个的区别，请知道的补充下。但是toolbar里使用后者的话，就会报错误。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Mar 2015 00:00:00 +0800</pubDate>
+	<link>http://cenalulu.github.io/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/</link>
+	<guid isPermaLink="true">http://cenalulu.github.io/archives/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/</guid>
+        
+        
+        <category>archives</category>
+        
+      </item>
+    
+      <item>
+        <title>创建博客</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;第一篇博客&lt;/h2&gt;
+
+&lt;p&gt;耗费一个周末把自己的博客建立起来了，希望能够在这里记录自己的学习过程和心里的路程，希望能和朋友交流学习和生活的点点滴滴。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Mar 2015 00:00:00 +0800</pubDate>
+	<link>http://cenalulu.github.io/life/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/</link>
+	<guid isPermaLink="true">http://cenalulu.github.io/life/android.support.v7.widget.Toolbar%E9%94%99%E8%AF%AF/</guid>
+        
+        
+        <category>life</category>
+        
+      </item>
+    
+  </channel>
+</rss>

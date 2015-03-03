@@ -1,0 +1,22 @@
+# Site navigation links
+
+- title: Home
+  url: /
+  excerpt: 
+  image: 
+
+# - title: Categories
+#   url: /categories/
+
+- title: Life
+  url: /life/
+
+- title: Archives
+  url: /archives/
+
+- title: Guestbook
+  url: /guestbook/
+
+- title: About
+  url: /about/
+

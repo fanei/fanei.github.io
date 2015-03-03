@@ -1,380 +1,219 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width initial-scale=1">
-
-<title>Categories</title>
-<meta name="description" content="Freshman21 is a Jekyll blog theme.">
-<meta name="keywords" content="Jekyll, theme, Freshman21">
-
-<link rel="icon" href="/images/favicon.ico">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="canonical" href="http://fanei.github.io//categories/">
-<link rel="alternate" type="application/atom+xml" title="fanei" href="http://fanei.github.io//zfeed.xml" />
-
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    processEscapes: true
-  }
-});
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-  }
-});
-MathJax.Hub.Queue(function() {
-  var all = MathJax.Hub.getAllJax(), i;
-  for(i=0; i < all.length; i += 1) {
-    all[i].SourceElement().parentNode.className += ' has-jax';
-  }
-});
-
-$(document).ready(function(){
-  $(".flip").click(
-      function(){
-        $(".panel").toggle(500);
-      });
-});
-</script>
-
-
-</head>
-
-
-<body>
-
-<div class="container">
-
-  <header class="site-header">
-
-  <div class="wrapper">
-
-    <h1 class="site-title"><a href="/">fanei</a></h1>
-    <h3 class="site-meta">Another Jekyll theme, Freshman twenty-first</h3>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-        
-        
-        <a class="page-link" href="/">Home</a>
-        
-        
-        
-        <a class="page-link" href="/about/">About</a>
-        
-        
-        
-        <a class="page-link" href="/archives/">Archives</a>
-        
-        
-        
-        <a class="page-link" href="/categories/">Categories</a>
-        
-        
-        
-        <a class="page-link" href="/guestbook/">Guestbook</a>
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link" href="/tags/">Tags</a>
-        
-        
-        
-        <a class="page-link" href="/zfeed.xml">Subscribe</a>
-        
-        
-        
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
+  <head>
+    <meta charset="utf-8">
+    <title>Latest Posts in *categories* • fanei's Tech Blog</title>
+    <meta name="description" content="I make living from IT">
+    
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Latest Posts in *categories*">
+	<meta name="twitter:description" content="I make living from IT">
+	
+	
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/logo.png">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Latest Posts in *categories*">
+	<meta property="og:description" content="I make living from IT">
+	<meta property="og:url" content="/categories/">
+	<meta property="og:site_name" content="fanei's Tech Blog">
     
 
-  <div class="page-content col-sm-8">
-    <div class="post">
+    <link rel="canonical" href="/categories/">
 
-  <header class="post-header">
-    <h1 class="post-title">Categories</h1>
-  </header>
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="fanei's Tech Blog Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
 
-  <article class="post-content about"> 
-    <ul class="tags-box">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
 
+    <style>
+    .sliding-menu-content {
+      top: 0;
+      right: 0;
+      text-align: center;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    </style>
 
-<a href="#uncategorized" title="uncategorized" rel="1">uncategorized<span class="size"> 1</span></a>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
 
-<a href="#articles" title="articles" rel="6">articles<span class="size"> 6</span></a>
+  </head>
 
-<a href="#howto" title="howto" rel="3">howto<span class="size"> 3</span></a>
-
+  <body>
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">fanei's Tech Blog</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">fanei's Tech Blog</a></li>
+	
+    
+        
+    
+    <li><a href="/" >Home</a></li>
+  
+    
+        
+    
+    <li><a href="/life/" >Life</a></li>
+  
+    
+        
+    
+    <li><a href="/archives/" >Archives</a></li>
+  
+    
+        
+    
+    <li><a href="/guestbook/" >Guestbook</a></li>
+  
+    
+        
+    
+    <li><a href="/about/" >About</a></li>
+  
 </ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" class="js-menu sliding-menu-content">
+	<ul class="menu-item">
+		<li>
+      
+        
+      
+			
+			<a href="/" class="title">Home</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/life/" class="title">Life</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/archives/" class="title">Archives</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/guestbook/" class="title">Guestbook</a>
+			
+		</li><li>
+      
+        
+      
+			
+			<a href="/about/" class="title">About</a>
+			
+		</li>
+	</ul>
+</nav>
+<button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
+	<span class="menulines"></span>
+</button>
 
-<ul class="tags-box">
+<div class="js-menu-screen menu-screen"></div>
 
-<li id="uncategorized">uncategorized</li>
+    <div id="page-wrapper">
+      <!--[if lt IE 9]><div class="upgrade notice-danger"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
 
-<time datetime="2011-07-22">2011-07-22</time> &raquo;
-<a href="/uncategorized/2011/07/22/hello-world.html" title="Hello world!">Hello world!</a><br />
+      <div id="main" role="main">			
+	<div class="wrap">
+		
+		<div class="page-title">
+			<h3>Latest Posts in *categories*</h3>
+			<h5 style="color:#BBBBBB">I make living from IT</h5>
+		</div>
+		<div class="archive-wrap">
+			<div class="page-content">
+				<div class="tiles">
 
+	
 
-<li id="articles">articles</li>
-
-<time datetime="2014-12-19">2014-12-19</time> &raquo;
-<a href="/articles/howto/2014/12/19/how-to-set-the-config-file.html" title="How to set the config.yml file">How to set the config.yml file</a><br />
-
-<time datetime="2014-12-19">2014-12-19</time> &raquo;
-<a href="/articles/howto/2014/12/19/freshman21-structure.html" title="Theme structure">Theme structure</a><br />
-
-<time datetime="2014-12-18">2014-12-18</time> &raquo;
-<a href="/articles/2014/12/18/how-to-install.html" title="How to install this theme">How to install this theme</a><br />
-
-<time datetime="2014-12-13">2014-12-13</time> &raquo;
-<a href="/articles/2014/12/13/simple-post.html" title="Sample Post">Sample Post</a><br />
-
-<time datetime="2013-12-25">2013-12-25</time> &raquo;
-<a href="/articles/2013/12/25/I-am-a-reindeer.html" title="I am a reindeer">I am a reindeer</a><br />
-
-<time datetime="2013-10-10">2013-10-10</time> &raquo;
-<a href="/articles/2013/10/10/milu.html" title="Père David's deer">Père David's deer</a><br />
-
-
-<li id="howto">howto</li>
-
-<time datetime="2015-01-18">2015-01-18</time> &raquo;
-<a href="/howto/2015/01/18/how-to-create-post-summary.html" title="How to create post summary">How to create post summary</a><br />
-
-<time datetime="2014-12-19">2014-12-19</time> &raquo;
-<a href="/articles/howto/2014/12/19/how-to-set-the-config-file.html" title="How to set the config.yml file">How to set the config.yml file</a><br />
-
-<time datetime="2014-12-19">2014-12-19</time> &raquo;
-<a href="/articles/howto/2014/12/19/freshman21-structure.html" title="Theme structure">Theme structure</a><br />
-
-
-
-</ul>
-
-
-  </article>
-
-  
-
-</div> 
-
-    <section class="pager">
-  
-  
-</section>
-
-
-  </div>
-  <div class="col-sm-2">
-<div class="sidebar-module about">
-  <h4>About Me</h4>
-  <img title="fanei" src="https://i.imgur.com/Mdc4szJl.jpg" alt="fanei"/>
-  <span>Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it.</span>
-  <br />
-
-  
-
-  You can contact me via:
-
-  
-  <a href="mailto:faneizn@gmail.com" title="mailto: faneizn@gmail.com">Email</a> /
-  
-  
-  <a href="https://github.com/fanei" title="GithubID: fanei">Github</a> /
-  
-  
-  <a href="https://twitter.com/fanei" title="TwitterID: fanei">Twitter</a>
-  
-
-  
+	
 
 </div>
+<!-- /.tiles -->
 
-<div class="sidebar-module"> <!-- sidebar-module-inset">-->
-  <h4>Copyright Notice</h4>
-
-  
-
-  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-    <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
-  </a>
-  <br />
-  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/s">Attribution-NonCommercial-ShareAlike</a>
-
-  
-
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Resent Posts</h4>
-  
-  <li>
-  <a href="//howto/2015/01/18/how-to-create-post-summary.html" title="How to create post summary" rel="bookmark">How to create post summary</a>
-  </li>
-  
-  <li>
-  <a href="//articles/howto/2014/12/19/how-to-set-the-config-file.html" title="How to set the config.yml file" rel="bookmark">How to set the config.yml file</a>
-  </li>
-  
-  <li>
-  <a href="//articles/howto/2014/12/19/freshman21-structure.html" title="Theme structure" rel="bookmark">Theme structure</a>
-  </li>
-  
-  <li>
-  <a href="//articles/2014/12/18/how-to-install.html" title="How to install this theme" rel="bookmark">How to install this theme</a>
-  </li>
-  
-  <li>
-  <a href="//articles/2014/12/13/simple-post.html" title="Sample Post" rel="bookmark">Sample Post</a>
-  </li>
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Categories</h4>
-  
-  <li><a href="/categories/#uncategorized" title="uncategorized" rel="1">uncategorized (1)</a></li>
-  
-  <li><a href="/categories/#articles" title="articles" rel="6">articles (6)</a></li>
-  
-  <li><a href="/categories/#howto" title="howto" rel="3">howto (3)</a></li>
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Tags</h4>
-  
-    <a href="/tags/#HelloWorld" title="HelloWorld" rel="1">HelloWorld</a> &nbsp;
-  
-    <a href="/tags/#Père David's deer" title="Père David's deer" rel="1">Père David's deer</a> &nbsp;
-  
-    <a href="/tags/#milu" title="milu" rel="1">milu</a> &nbsp;
-  
-    <a href="/tags/#Elaphurus davidianus" title="Elaphurus davidianus" rel="1">Elaphurus davidianus</a> &nbsp;
-  
-    <a href="/tags/#reindeer" title="reindeer" rel="1">reindeer</a> &nbsp;
-  
-    <a href="/tags/#sample-post" title="sample-post" rel="3">sample-post</a> &nbsp;
-  
-    <a href="/tags/#structure" title="structure" rel="1">structure</a> &nbsp;
-  
-    <a href="/tags/#configure" title="configure" rel="1">configure</a> &nbsp;
-  
-    <a href="/tags/#summary" title="summary" rel="1">summary</a> &nbsp;
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Blogroll</h4>
-  
-  <li><a href="http://fanei.github.io/" title="Another Jekyll blog theme">fanei</a></li>
-  
-  <li><a href="http://fanei.github.io/" title="Lijia Yu's website">author's website</a></li>
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Archives</h4>
-
-  
-  
-  
-  
-  
-  <li id="2015" > <a href="/archives/#2015">2015</a></li>
-  
-  
-  
-  
-  
-  
-  
-  <li id="2014" > <a href="/archives/#2014">2014</a></li>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <li id="2013" > <a href="/archives/#2013">2013</a></li>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <li id="2011" > <a href="/archives/#2011">2011</a></li>
-  
-  
-
-</div>
-
-
-</div>
+			</div><!-- /.page-content -->
+		</div class="archive-wrap"><!-- /.archive-wrap -->
+	</div><!-- /.wrap -->
+</div><!-- /#main -->
 
 
 
-  
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <footer class="site-footer">
+      ga('create', 'UA-58172430-1', 'auto');
+      ga('send', 'pageview');
 
-  <p>Copyright &copy; <a href="/">fanei</a></p>
-  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
-  on 
-  
-  <a href="https://github.com/">Github</a>
-  
-  | Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="http://yulijia.net">Lijia Yu</a>  
+    </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?7899932bbca61f3d49db1d4bb958c831";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 
+
+
+
+      <footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+		<ul class="menu-item">
+		
+      
+        
+      
+			<li><a href="" ></a></li>
+		
+		</ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2015 <a href="">fanei's Tech Blog</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/" rel="nofollow">Skinny Bones</a>.</p>
 </footer>
+    </div>
 
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+    
 
-</div>
-
-</body>
+  </body>
 
 </html>
