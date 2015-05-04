@@ -5,229 +5,104 @@ categories: archives
 image:
 ---
 
-#### 代码高亮
+最近在研究mac版的andorid studio，有遇到快捷键不知道，于是在网络上找了些快捷键，记录下来。供自己来备忘。
 
-OSX:Shift + Cmd + F7
+### Mac下快捷键的符号所对应的按键
 
-Win/Linux:Alt + J
+⌥ —> option|alt
 
+⇧ —>shift
 
-#### 代码高亮向上查找
+⌃ —>control
 
-OSX:Shift + Cmd + G
+⌘ —>command
 
-Win/Linux:Shift + F3
+⎋ —>esc
 
+------------------------------------------------------
 
-#### 代码高亮向下查找
+### Android Studio 常用快捷键 for mac
 
-OSX:Cmd + G
+查找／查看相关
 
-Win/Linux:F3
+⌘O: 全局查找class类名<使用率非常高>
 
+⌘F: 在当前编辑文件中查找<使用率非常高> ｜ 对应window中的Ctrl + F
 
-#### 文件方法结构
+⌘F12：当前编辑的文件中结构快速导航 | 对应window中的 Ctrl + F12
 
-OSX:Cmd + F12
+⌘E: 打开最近访问的文件列表 | 对应window中的Ctrl + E
 
-Win/Linux:Ctrl + F12
+⌥⌘O: 输入类名／方法名／字段名来查找任何匹配的类／方法／字段<使用率非常高>
 
+⇧⌘O: 全局项目查找文件（类／资源文件／布局文件都通过该快捷键查找）<使用率非常高>
 
-#### 查找调用的位置
+⌃H: 查看当前编辑class类的hierarchy结构 | 对应window中的Ctrl + H
 
-OSX/Win/Linux:Ctrl + Alt + H
+⌥F7: 列出全局项目中该类／方法 被引用／调用的情况<使用率非常高>[比⌥⌘F7显示效果好] | 对应window中的Alt + F7
 
+⌥⌘F7: 列出全局项目中该类／方法 被引用／调用的情况 | 对应window中的Ctrl + Alt + F7
 
-#### 快速查找定义
+⌃⌥H: 方法被调用结构［method’s Call Hierarchy］| 对应window中的ctrl + alt + h
 
-OSX:Cmd + Space
+⌘P: 列出函数方法一系列的有效参数，如果光标是一个方法调用的括号之间 | 对应window中的Ctrl + P
 
-Win/Linux:Ctrl + Shift + I
+⇧⌘F7: 快速，高亮显示变量在当前文件中的引用情况,使用⌘G和⇧⌘G快捷键 可以前往跳到下一个/上一个高亮的变量，按⎋移除高亮显示 | 对应window中的Ctrl + Shift + F7
 
+F1: 查看类／方法的注释文档
 
-#### 折叠展开代码块
 
-OSX:Cmd + Plus,Minus
 
-Win/Linux:Ctrl + Shift + Plus/Minus
+控制操作相关
 
+⌘/: 注释与取消注释，注释效果 //... | 对应window中的Ctrl + /
 
-#### 折叠展开全部代码块
+⌥⌘/: 注释与取消注释，注释效果 /*...*/ | 对应window中的Ctrl+Shift+/
 
-OSX:Cmd + Shift + Plus,Minus
+⇧⌥up/down: 移动行上下移动 | 对应window中的alt + shift + up/down
 
-Win/Linux:
+⌘delete: 删除行 ｜ 对应window中的ctrl + y
 
+⌘d: 复制行 ｜ 对应window中的 ctrl + d
 
-#### 添加书签
+⌘J: 快速生成模版代码块，如if,while,return等<使用频率非常高，高效率编写代码> | 对应window中的Ctrl + J
 
-OSX:F3
+⌘N: 快速生成getter／setter方法，构造方法，toString()方法等 <使用率非常高> | 对应window中的Alt + Insert
 
-Win/Linux:F11
+⌥⌘T: Surround with快速调出if,for,try...catch,while等环绕代码 ｜ 对应window中的ctrl + alt + t
 
+⌃O: 引入重写父类的方法［Override Methods］<使用率非常高>
 
-#### 添加书签标识
+⌃I: 引入实现接口或抽象类方法［Implement Methods］<使用率非常高>
 
-OSX:Alt + F3
+⌃Space: 当申明一个变量时，根据变量类型提示给出建议的变量名称，等还有其他很多智能提示作用<使用率非常高>
 
-Win/Linux:Ctrl + F11
+⌥⌘L: 代码格式化 <使用率非常高> | 对应window中的Ctrl+Alt+L
 
 
-#### 显示书签
 
-OSX:Cmd + F3
+代码重构相关
 
-Win/Linux:Shift + F11
+⇧F6:代码重构时，类名／方法名／变量名 重命名操作 | 对应window中的Shift + F6
 
+⌘R: 代码重构时，可以用来批量重命名变量
 
-#### 查找动作
+⌥⌘M: 方法重构，方法抽离 ｜对应window中的Ctrl+Alt+M
 
-OSX:Cmd + Shift + A
+⌥⌘P: 参数重构，将方法内变量抽离成方法参数 ｜对应window中的Ctrl+Alt+P
 
-Win/Linux:Ctrl + Shift + A
+⌥⌘V: 变量抽离，<使用率非常高> | 对应window中的Ctrl+Alt+V
 
+    new StringBuffer()
 
-#### 上下移动代码
+使用快捷键后效果如下：
 
-OXS/Win/Linux:Alt + Shift + Up/Down
+    StringBuffer stringBuffer = new StringBuffer();
 
+⌥⌘F: 字段抽离，将方法内的变量抽离成类字段申明,简单说就是把变量的申明从方法内重构抽离到方法外 ｜ 对应window中的Ctrl+Alt+F
 
-#### 删除行
 
-OSX:Cmd + Delete
 
-Win/Linux:Ctrl + Y
+其他
 
-
-#### 快捷向下复制行
-
-OSX:Cmd + D
-
-Win/Linux:Ctrl + D
-
-
-#### 扩大缩小选中范围
-
-OSX:Alt + Up/Down
-
-Win/Linux:Ctrl + W/Ctrl + Shift + W
-
-
-#### 快捷生成结构体
-
-OSX:Cmd + Alt + T
-
-Win/Linux:Ctrl + Alt + T
-
-
-#### 快捷覆写方法
-
-OSX:Ctrl + O
-
-Win/Linux:
-
-
-#### 快捷定位到行首/尾
-
-OSX:Cmd + Left/Right
-
-
-#### 按照模板生成代码
-
-OSX:Cmd + J
-
-Win/Linux: Ctrl + J
-
-或者 .
-
-
-#### 注释代码(//)
-
-OSX:Cmd + /
-
-Win/Linux:
-
-
-#### 注释代码(/**/)
-
-OSX:Cmd + Alt + /
-
-Win/Linux:
-
-
-#### 格式化代码
-
-OSX:Cmd + Alt + L
-
-Win/Linux:
-
-
-#### 快捷选择
-
-OSX:Alt + F1
-
-Win/Linux:Alt + F1
-
-
-#### 快捷移动
-
-OSX:Ctrl + Up/Down
-
-Win/Linux:
-
-
-#### 快捷退至上一行末尾
-
-OSX:Ctrl + Shift + J
-
-Win/Linux:Ctrl + Shift + J
-
-
-
-#### 快捷最近打开
-
-OSX:Cmd + E
-
-Win/Linux:Ctrl + E
-
-
-#### 清除无效引用
-
-Alt + Control + O
-
-Win/Linux:Alt + Control + O
-
-
-#### 代码补全
-
-Cmd + Shift + Enter
-
-Win/Linux:Ctrl + Shift + Enter
-
-
-#### 提示错误解决方案
-
-Alt + Enter
-
-Win/Linux:Alt + Enter
-
-
-#### 提示参数类型
-
-Cmd + P
-
-Win/Linux:Ctrl + P
-
-
-#### 查找+替换
-
-Cmd + R
-
-Win/Linux:Ctrl + R
-
-
-#### 查找
-
-Cmd + F
-
-Win/Linux:Ctrl + F
+⇧⌘A: 你可以调用任何菜单或动作的名称在Android studio中 ｜ 对应window中的ctrl + shift + a
