@@ -9,7 +9,7 @@ image:
 
 ### Mac下快捷键的符号所对应的按键
 
-⌥ —> option|alt
+⌥ —>option/alt
 
 ⇧ —>shift
 
